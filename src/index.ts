@@ -7,7 +7,7 @@ export class Random {
         return generateRandomDate(new Date(from, 0, 1), new Date(to, 0, 1))
     }
 
-    static randomColor(data: string) {
+    static randomColor(data?: string) {
         switch (data) {
             case "hash":
                 return rgbToHex(red(), green(), blue());

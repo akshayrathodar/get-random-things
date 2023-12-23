@@ -1,6 +1,6 @@
 {
   "name": "get-random-things",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "with the use of this package you can get many things like random Id, random date, random color and many more things.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
