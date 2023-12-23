@@ -1,0 +1,32 @@
+{
+  "name": "get-random-things",
+  "version": "1.0.4",
+  "description": "with the use of this package you can get many things like random Id, random date, random color and many more things.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "nom run build"
+  },
+  "keywords": [
+    "random",
+    "uniqueid",
+    "randomthing"
+  ],
+  "author": "Akshay Rathod",
+  "type": "module",
+  "license": "ISC",
+  "exports": "./index.ts",
+  "dependencies": {
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
