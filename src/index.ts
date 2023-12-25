@@ -20,6 +20,19 @@ export class Random {
         return v4() as String;
     }
 
+    static randomGradient(type: "linear" | "radial" | "conic" = "linear", degree: string = "90deg") {
+        switch (type) {
+            case "linear":
+                return "linear-gradient(" + degree + ", " + Random.randomColor('hash') + "," + Random.randomColor('hash') + ")"
+            case "radial":
+                return "radial-gradient(" + degree + ", " + Random.randomColor('hash') + "," + Random.randomColor('hash') + ")"
+            case "conic":
+                return "radial-gradient(" + degree + ", " + Random.randomColor('hash') + "," + Random.randomColor('hash') + ")"
+            default:
+                break;
+        }
+    }
+
 }
 
 function red() {
